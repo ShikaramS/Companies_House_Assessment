@@ -12,7 +12,7 @@ export class CartPage {
   }
 
   async getCartItems() {
-    await this.page.$$('[class="cart_item"]');
+    return await this.page.$$('[class="cart_item"]');
   
 
     

@@ -15,12 +15,12 @@ test('User can add and remove item from cart', async ({ page }) => {
   await inventoryPage.goToCart();
 
   await expect(page).toHaveURL("https://www.saucedemo.com/v1/cart.html");
-  /*
+  
   const items = await cartPage.getCartItems();
   expect(items.length).toBe(1);
 
   await cartPage.removeItem('Sauce Labs Backpack');
   const updatedItems = await cartPage.getCartItems();
   expect(updatedItems.length).toBe(0);
-  */
+  
 }); 
